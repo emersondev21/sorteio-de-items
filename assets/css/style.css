@@ -33,9 +33,11 @@ body {
 }
 
 input {
+  padding: 10px;
   border: none;
   border-bottom: solid black;
   font-size: 18px;
+  outline: none;
 }
 
 ul {
@@ -76,14 +78,9 @@ button {
   padding: 10px 20px;
   margin-top: 10px;
   border: none;
-  background-color: #28a745;
   color: white;
   cursor: pointer;
   border-radius: 5px;
-}
-
-button:hover {
-  background-color: #218838;
 }
 
 #result {
@@ -109,4 +106,27 @@ cursor: pointer;
 button:active {
 box-shadow: 0px 0px black;
 transform: translate(5px, 5px);
+}
+
+@media only screen and (max-width: 620px) {
+  
+  body {
+    justify-content: flex-start;
+  }
+  
+  #container {
+    margin-top: 50px;
+    width: 95%;
+  }
+
+  .input-box{
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  button {
+    background-color: white;
+    color: black;
+    height: 60px;
+  }
 }
